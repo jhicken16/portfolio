@@ -1,0 +1,99 @@
+/*
+font-family: 'Carter One', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Orbitron', sans-serif;
+*/
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Lobster&family=Orbitron:wght@400;500;600;900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Title placement and decoration */
+#title-container{
+    width: 100%;
+    height: 80vh;
+    
+    
+}
+#title{
+    position: relative;
+    width:  20em;
+    top: 36%;
+    left: 14%;
+    font-size: 3em;
+    font-family: 'Orbitron', sans-seri;
+}
+#name{
+    color: #06C4EF;
+    font-family: 'Lobster', cursive;
+    font-weight: 200;
+    font-size: 2em;
+}
+
+
+/* Section decoration */
+.triangle-right{
+    
+    width: 0;
+    height: 0;
+    position: relative;
+    top: 60%;
+    
+    /* Will use Javascript to adjust the size of this on resize */
+    border-bottom:  12em solid #06C4EF;
+    border-left: 10em solid transparent;
+    
+}
+.left-triangle{
+    width: 0;
+    height: 0;
+    position: relative;
+    top:61.5%;
+
+    /* Will use Javascript to adjust the size of this on resize */
+    border-top:  12em solid #06C4EF;
+    border-right: 30em solid transparent;
+}
+
+/* Section decoration */
+#skills{
+    background-color: #06C4EF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#skills-list img{
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    
+}
+
+#projects{
+    margin: 2.5%;
+    
+}
+#projects div{
+    display: flex;
+    flex-direction: row;
+}
+#projects div div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

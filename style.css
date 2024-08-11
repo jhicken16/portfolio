@@ -84,16 +84,84 @@ font-family: 'Orbitron', sans-serif;
 }
 
 #projects{
-    margin: 2.5%;
-    
+    margin: 2.5%;  
+}
+#projects h2{
+    font-family: 'Orbitron', sans-seri;
 }
 #projects div{
     display: flex;
     flex-direction: row;
 }
+#projects div h3{
+    font-family: 'Orbitron', sans-seri;
+}
 #projects div div{
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 2.5% 5%;
 }
+#projects div div h3{
+    margin-bottom: 2%;
+}
+#projects div div ul{
+    margin:3% 0 2% 3%;
+}
+#skills-title h2{
+    font-family: 'Orbitron', sans-seri;
+    margin-bottom: 2em;
+}
+.card{
+    
+    border-bottom: solid rgba(0, 0, 0, 0.5) 2px;
+}
+footer .triangle-right{
+    z-index: -1;
+    position: relative;
+    top: -10em; 
+    margin-bottom: -10em;   
+}
+#email-container{
+    position: relative;
+    background-color: #06C4EF;
+    margin-bottom: -10em;
+}
+#contact{
+    text-align: center;
+    padding: 2em;
+}
+.button-38 {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .25rem .5rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 1rem;
+  }
+  
+  .button-38:hover {
+    background-color: rgb(249,250,251);
+  }
+  
+  .button-38:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  
+  .button-38:focus-visible {
+    box-shadow: none;
+  }

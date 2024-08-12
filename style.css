@@ -19,15 +19,15 @@ font-family: 'Orbitron', sans-serif;
 #title-container{
     width: 100%;
     height: 80vh;
+    overflow: hidden;
     
     
 }
 #title{
     position: relative;
-    width:  20em;
     top: 36%;
     left: 14%;
-    font-size: 3em;
+    font-size: 220%;
     font-family: 'Orbitron', sans-seri;
 }
 #name{
@@ -101,6 +101,7 @@ font-family: 'Orbitron', sans-serif;
     display: flex;
     flex-direction: column;
     margin: 2.5% 5%;
+    
 }
 #projects div div h3{
     margin-bottom: 2%;
@@ -164,4 +165,31 @@ footer .triangle-right{
   
   .button-38:focus-visible {
     box-shadow: none;
+  }
+
+  .iframe-wrapper{
+    position: relative;
+    overflow: hidden;
+    
+  }
+  .iframe-wrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media only screen and (max-width: 600px){
+    #projects div{
+        flex-direction: column;
+        padding-bottom: 1em;
+        margin-bottom: 4em;
+    }
+    #projects div div{
+        width: 90%;
+    }
+    #title{
+        font-size: 1.25em;
+    }
   }

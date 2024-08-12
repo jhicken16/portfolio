@@ -19,15 +19,15 @@ font-family: 'Orbitron', sans-serif;
 #title-container{
     width: 100%;
     height: 80vh;
+    overflow: hidden;
     
     
 }
 #title{
     position: relative;
-    width:  20em;
     top: 36%;
     left: 14%;
-    font-size: 3em;
+    font-size: 220%;
     font-family: 'Orbitron', sans-seri;
 }
 #name{
@@ -183,8 +183,13 @@ footer .triangle-right{
   @media only screen and (max-width: 600px){
     #projects div{
         flex-direction: column;
+        padding-bottom: 1em;
+        margin-bottom: 4em;
     }
     #projects div div{
         width: 90%;
+    }
+    #title{
+        font-size: 1.25em;
     }
   }

@@ -15,6 +15,10 @@ font-family: 'Orbitron', sans-serif;
     box-sizing: border-box;
 }
 
+p{
+    font-family: Arial, sans-serif;
+}
+
 /* Title placement and decoration */
 #title-container{
     width: 100%;
@@ -36,12 +40,42 @@ font-family: 'Orbitron', sans-serif;
     font-weight: 200;
     font-size: 2em;
 }
+#bio{
+    display: flex;
+    position: relative;
+    top: 45%;
+    left: 14%;
+    width: 80%;
+}
+#bio p{
+    position: relative;
+    width: 60%;
+    display: inline-block;
+    
+    border: rgba(0, 0, 0, 0.151) solid 2px;
+    padding: 4% 3%;
+    border-radius: 30px;
+    margin-left: 5%;
+
+    font-size: large;
+    line-height: 1.5;
+}
+
+#bio img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: #06C4EF solid 2px;
+}
 
 
 /* Section decoration */
 .triangle-right{
     
-    width: 0;
+    width: 100%;
     height: 0;
     position: relative;
     top: 60%;
@@ -52,7 +86,7 @@ font-family: 'Orbitron', sans-serif;
     
 }
 .left-triangle{
-    width: 0;
+    width: 100%;
     height: 0;
     position: relative;
     top:61.5%;
@@ -80,6 +114,10 @@ font-family: 'Orbitron', sans-serif;
     width: 15%;
     aspect-ratio: 3/2;
     object-fit: contain;
+    border: rgba(255, 255, 255, 0.534) solid 2px;
+    padding: 0.25%;
+    border-radius: 10%;
+    margin: 0.5%;
     
 }
 
@@ -89,34 +127,79 @@ font-family: 'Orbitron', sans-serif;
 #projects h2{
     font-family: 'Orbitron', sans-seri;
 }
-#projects div{
+
+
+.card{
     display: flex;
     flex-direction: row;
+    border-bottom: solid rgba(0, 0, 0, 0.5) 2px;
+    align-items: center;
 }
-#projects div h3{
+.card h3{
     font-family: 'Orbitron', sans-seri;
 }
-#projects div div{
-    width: 50%;
+.card div:first-child{
+    width: 40%;
     display: flex;
     flex-direction: column;
     margin: 2.5% 5%;
     
 }
-#projects div div h3{
+.card div:first-child h3{
     margin-bottom: 2%;
 }
-#projects div div ul{
-    margin:3% 0 2% 3%;
+.card div:first-child p{
+    border: rgba(0, 0, 0, 0.151) solid 2px;
+    padding: 4% 3%;
+    border-radius: 30px;
+    margin-left: 5%;
+    font-size: medium;
+    line-height: 1.5;
 }
-#skills-title h2{
-    font-family: 'Orbitron', sans-seri;
-    margin-bottom: 2em;
+.card div:first-child ul{
+    margin-left: 7.5%;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    flex-wrap: wrap;
+
 }
-.card{
+.card div:first-child ul li{
     
-    border-bottom: solid rgba(0, 0, 0, 0.5) 2px;
+    margin: 1.5% 2% 0 2%;
+    background-color: #06C4EF;
+    padding: 2% 5%;
+    border-radius: 10px;
+} 
+.iframe-wrapper{
+    width: 45%;
+    margin: 2%;
+    position: relative;
+    overflow: hidden;
+    
 }
+.iframe-wrapper iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.links{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+}
+.links a img{
+    width: 100%;
+}
+.links a{
+    text-align: center;
+    color: black;
+    margin-bottom: 10%;
+}
+
+
+
 footer .triangle-right{
     z-index: -1;
     position: relative;
@@ -167,29 +250,63 @@ footer .triangle-right{
     box-shadow: none;
   }
 
-  .iframe-wrapper{
-    position: relative;
-    overflow: hidden;
-    
-  }
-  .iframe-wrapper iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+ 
 
   @media only screen and (max-width: 600px){
-    #projects div{
+    #title{
+        font-size: 1.25em;
+        top: 10%;
+        left: 5%;
+        width:90%;
+    }
+    #bio{
+        top: 15%;
+        left: 0;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+    #bio img{
+        display: none;
+    }
+    #bio p{
+        width: 80%;
+        font-size: medium;
+        margin: 0;
+    }
+    
+    .card{
         flex-direction: column;
         padding-bottom: 1em;
         margin-bottom: 4em;
     }
-    #projects div div{
+    .card div:first-child {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .card div:first-child p{
+        margin-left: 0;
+    }
+
+    .iframe-wrapper{
         width: 90%;
     }
-    #title{
-        font-size: 1.25em;
+
+    .links{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-self: start;
     }
+    .links a img{
+        height: 3em;
+    }
+    .links a{
+        margin-left: 1em;
+        text-align: center;
+        color: black;
+        margin-bottom: 10%;
+    }
+
+   
   }

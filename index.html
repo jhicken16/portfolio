@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/portfolio/style.css">
+    <link rel="stylesheet" href="/style.css">
     
     <title>Jack Hicken Protfolio</title>
 </head>
@@ -16,8 +16,14 @@
         
         <div id="title-container">
             <h1 id="title">Hi, i'm <span id="name">Jack</span><br>I'm a full stack developer</h1>
-            
+            <div id="bio">
+
+                <img src="/resources/profile-pic.jpg" alt="A picture of me."> 
+ 
+                <p>Hello, I’m Jack, a full-stack web developer. My journey began in technology through art, where my creative concepts quickly outgrew my capabilities. Recognizing the need for a more powerful solution, I turned to programming. Since then, I’ve challenged myself to create innovative applications, solve intriguing problems, and explore ways users can interact with web applications</p>
         </div>
+        </div>
+       
         
 
     </header>
@@ -26,11 +32,6 @@
         <div class="triangle-right"></div>
         <div id="skills">
             
-            <div id="skills-title">
-                
-                <h2>Skills</h2>
-                
-            </div>
             <div id="skills-list">
                 <img src="resources\cLogo.png" alt="Python logo">
                 <img src="resources\HTMLlogo.png" alt="">
@@ -50,8 +51,8 @@
                 <img src="resources\postgresLogo.png"alt="postgres Logo">
                 <img src="resources\springLogo.png"alt="Spring Logo">
                 <img src="resources\ThreeJsLogo.png"alt="Three j s Logo">
+                <img src="resources/nodeJs-logo.png" alt="Node.js logo">
             </div>
-            
         </div>
         <div class="left-triangle"></div>
 
@@ -61,7 +62,7 @@
             <div class="card">
                <div >
                     <h3>Modular Project</h3>
-                    <p>This project is a prototype that I plan to use with a modular structure I have also been working on. The user can build some think, take a screen shot, give the module a name and description. Then save it to a database. Users will also be able to view other users modules and edit them in the module creator. Currently the module creator just uses cubes instead of the model as it is still in development.</p>
+                    <p>This project represents a prototype that I intend to utilize with a modular structure I’ve been developing. Users have the capability to construct an item, capture a screenshot, assign a name and description to the module, and subsequently store it in a database. Additionally, users will be able to access and edit other users’ items through the module creator. Currently, the module creator employs cubes as placeholders, as it remains in the development phase.</p>
                     <ul>
                         <li>HTML</li>
                         <li>Javascript</li>
@@ -71,17 +72,18 @@
                         <li>SQLite</li>
                         <li>SQL Alchemy</li>
                     </ul>
-                    <h1>need to make repo public</h1>
-                    <a href="https://github.com/me50/jhicken16.git" target="_blank">Link to project on github</a>
                 </div> 
                 <div class="iframe-wrapper">
                     <iframe src="https://www.youtube.com/embed/sOuBXAnu758" target="_blank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/me50/jhicken16.git" target="_blank"><img src="/resources/github-log.png" alt="gitHub logo." /><h6>Git Hub</h6></a>
                 </div>
             </div>
             <div class="card">
                <div >
                     <h3>Reddit Feed Filter</h3>
-                    <p>The idea behind this project is to allow a user to remove a sub-reddit from their current feed and add it back whenever they like. You can also search and add that sub-reddit to you feed. This gives the user more control over what they are viewing in the moment allowing them to refine their feed with their current mood or interest. This project uses redux stores to allow user to manipulate their feed.</p>
+                    <p>The objective of this project is to empower users to selectively remove subreddits from their current feed and subsequently re-add them at their discretion. Additionally, users have the capability to search for and add specific subreddits to their feed. This enhanced functionality provides users with greater control over their viewing experience, allowing them to curate their feed based on their current mood or interests. The project leverages Redux stores to facilitate user manipulation of their feed.</p>
                     <ul>
                         <li>HTML</li>
                         <li>Javascript</li>
@@ -89,17 +91,19 @@
                         <li>Redux</li>
                         <li>Reddit JSON API</li>
                     </ul>
-                    <a href="https://github.com/jhicken16/reddit_feed_filter" target="_blank">Link to project on github</a>
-                    <a href="https://jhicken16.github.io/reddit_feed_filter/" target="_blank">Link to Static site</a>
                 </div> 
                 <div class="iframe-wrapper" >
                     <iframe src="https://www.youtube.com/embed/6PJhHN-Q5OY?si=GhN6zxFJgqJNucpy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="links">
+                    <a href="https://jhicken16.github.io/reddit_feed_filter/" target="_blank"><img src="/resources/link-icon.png" alt="gitHub logo." /><h6>Live Demo</h6></a>
+                    <a href="https://github.com/jhicken16/reddit_feed_filter" target="_blank"><img src="/resources/github-log.png" alt="gitHub logo."/><h6>Git Hub</h6></a>
                 </div>
             </div>
             <div class="card">
                <div>
                     <h3>League Table Interface</h3>
-                    <p>This was a project from code academy to create an interface for users to view data from a database. I made use of cookies sort algorithms; I did not pay much attention to css as my main goal was to familiarize myself with .NET MVC.</p>
+                    <p>This project, undertaken during a Code Academy course, involved the development of an interface for users to access and view data from a database. I implemented sorting algorithms and utilized cookies. While CSS received minimal attention, my primary focus was to gain familiarity with .NET MVC.</p>
                     <ul>
                         <li>C#</li>
                         <li>.NET MVC</li>
@@ -108,52 +112,57 @@
                         <li>CSS</li>
                         <li>Java Script</li>
                     </ul>
-                    <a href="https://github.com/jhicken16/LeagueTableInterface" target="_blank">Link to project on github</a>
                 </div> 
                 <div class="iframe-wrapper">
                     <iframe src="https://www.youtube.com/embed/2S3KiF_n5BU?si=DsvKnEa-DMJaNn6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/jhicken16/LeagueTableInterface" target="_blank"><img src="/resources/github-log.png" alt="gitHub logo."/><h6>Git Hub</h6></a>
                 </div>
             </div>
             <div class="card">
                <div>
                     <h3>Dinner Allergy review</h3>
-                    <p>This is a Spring Boot api for restaurant reviews. For users to review restaurants the higher the score for a provided allergy the safer it is for the user to eat there. </p>
+                    <p>This project involves the development of a Spring Boot API for restaurant reviews. Users can assign scores to restaurants based on provided allergy information, with higher scores indicating greater safety for consumption. A critical aspect of this project was user input validation, which was addressed using Spring Boot’s built-in annotations and additional checks in setters to prevent any malicious data corruption</p>
                     <ul>
                         <li>Java</li>
                         <li>Spring Boot</li>
                         <li>Spring Boot Embedded Database</li>
                     </ul>
-                    <a href="https://github.com/jhicken16/Dinner-Allergy-reviews" target="_blank">Link to project on github</a>
                 </div> 
                 <div class="iframe-wrapper">
                     <iframe src="https://www.youtube.com/embed/QD4A6fodxsw?si=eD73OfT_yr9qRMBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/jhicken16/Dinner-Allergy-reviews" target="_blank"><img src="/resources/github-log.png" alt="gitHub logo."/><h6>Git Hub</h6></a>
                 </div>
             </div>
             <div class="card">
                 <div>
                      <h3>Speech To Text Custom Voice Commands</h3>
-                     <p>I have found speech to text application I have used in the past to be very clunky whenever trying to apply them. This is to amend that, the problem that I have had with them is when you make a mistake, or the AI miss reads a word. Is having to delete the word manually ruins your flow. Or when needing to add punctuation manually. With this application users can create their own custom command and have some control over what the outcome of those commands will do.</p>
+                     <p>In response to the limitations I’ve encountered with previous speech-to-text applications, I’ve developed a solution to address these issues. The challenge lies in the manual correction process—deleting words or adding punctuation disrupts the flow. With my application, users can define custom commands and exert greater control over the resulting outcomes.</p>
                      <ul>
                          <li>React</li>
                          <li>React-Speech-Recognition Library</li>
                          <li>Express</li>
                          <li>Postgres</li>
                      </ul>
-                     <a href="https://github.com/jhicken16/speech-to-text-custom-voice-commands" target="_blank">Link to project on github</a>
                  </div> 
                  <div class="iframe-wrapper">
                     <iframe src="https://www.youtube.com/embed/APKIXZcjvQc?si=WmX_bL4a_6ixR95B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                  </div>
-             </div>
+                 <div class="links">
+                    <a href="https://github.com/jhicken16/speech-to-text-custom-voice-commands" target="_blank"><img src="/resources/github-log.png" alt="gitHub logo."/><h6>Git Hub</h6></a>
+                </div>
+                </div>
             <div class="card">
                 <div>
                      <h3>Location Collector</h3>
-                     <p>This project is from my boot camp. The goal is to create an application using leaflet java script library with a php backend that makes call to other API’s
+                     <p>This project is part of my boot camp curriculum. The objective is to create an application using the Leaflet JavaScript library with a PHP backend that communicates with other APIs.
                         <br><br>
-                        The initial call to 3rd party API is to open cage. This first API call is to gather the general information of the area that the user has clicked, e.g. address. And put into the main data structures.
+                     The initial call to a third-party API is to OpenCage. This API retrieves general information about the area where the user has clicked, such as the address, and stores it in the main data structures.
                         <br><br>
-                        <b>To Be Developed.</b> Once user has selected A location there will be several options to collect more information using more 3rd party API’s. Which will allow for more features to be add. User after development is completed will be able to click on map or search for location, select a location and search for nearby points of interest which will also exist on the map. User will be able to plan route of points of interest they have selected, also to order their route by allowing user to change there position in an array.
-                     </p>
+                     <b>To Be Developed:</b> Once a user selects a location, additional options will be available to collect more information using other third-party APIs. These enhancements will enable the addition of more features. After development is complete, users will be able to click on the map or search for a location, select a specific area, and search for nearby points of interest, which will also be displayed on the map. Users can plan routes based on the selected points of interest and reorder their route by adjusting positions within an array.</p>
                      <ul>
                          <li>Java Script</li>
                          <li>PHP</li>
@@ -161,13 +170,15 @@
                          <li>CSS</li>
                          <li>Jquery</li>
                          <li>HTML</li>
-                     </ul>
-                     <a href="https://github.com/jhicken16/JackHicken/tree/main/project1" target="_blank">Link to project on github</a>
+                     </ul>  
                  </div> 
                  <div class="iframe-wrapper">
                     <iframe src="https://www.youtube.com/embed/5N9gPWuJCJo?si=drbqCW8dbVM0UwIL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                  </div>
-            </div>
+                 <div class="links">
+                    <a href="https://github.com/jhicken16/JackHicken/tree/main/project1" target="_blank"><img src="/resources/github-log.png" alt="gitHub logo."/><h6>Git Hub</h6></a>
+                </div>
+                </div>
              
         </div> 
     </main> 
@@ -181,6 +192,6 @@
 
     </footer>
 
-    <script src="/portfolio/resize-decorations.js"></script>
+    <script src="/resize-decorations.js"></script>
 </body>
 </html>

@@ -30,7 +30,6 @@ function resizeIframe(iframeWrapperArray){
     }
 }
 const iframeWrapperArray = document.getElementsByClassName('iframe-wrapper')
-console.log(iframeWrapperArray)
 const rightTriangles = document.getElementsByClassName("triangle-right")
 const leftTriangles = document.getElementsByClassName("left-triangle")
 resizeElementToScreenWidth(rightTriangles)

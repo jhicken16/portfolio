@@ -274,6 +274,10 @@ footer .triangle-right{
         font-size: medium;
         margin: 0;
     }
+
+    #skills-list img{
+        width: 30%
+    }
     
     .card{
         flex-direction: column;
